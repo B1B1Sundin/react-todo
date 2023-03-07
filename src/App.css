@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.input-box{
+  display: grid;
+  grid-template-columns: 1fr fit-content(100px);
+  width: 100%;
+  gap: 10px; /* specifies gap between cells*/
+}
+
+.todo{
+  list-style: none;
+}
+
+.todo li {
+  text-align: start;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.todo li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
